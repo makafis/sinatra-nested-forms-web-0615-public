@@ -1,7 +1,24 @@
 <h1>Display your Pirate here</h1>
+<table>
+<tr>Pirate</tr>
 
+ <td>
+ <%= @pirate[:name] %></td>
+ <td><%= @pirate[:weight] %></td>
+ <td><%= @pirate[:height] %></td>
 
 <h2>Display your first ship here</h2>
-
+<td>Ship 1</td>
+ <td>
+ <%= @pirate[:ships]["0"][:name] %></td>
+ <td><%= @pirate[:ships]["0"][:type] %></td>
+ <td><%= @pirate[:ships]["0"][:booty] %></td>
 
 <h2>Display your second ship here</h2>
+<td>Ship 2</td>
+ <td>
+ <%= @pirate[:ships]["1"][:name] %></td>
+ <td><%= @pirate[:ships]["1"][:type] %></td>
+ <td><%= @pirate[:ships]["1"][:booty] %></td>
+
+</table>
